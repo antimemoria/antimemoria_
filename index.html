@@ -671,6 +671,11 @@
   </div>
 </div>
 
+<!-- IMAGE LIGHTBOX -->
+<div id="img-lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(7,7,8,0.97);z-index:2000;align-items:center;justify-content:center;padding:32px;cursor:zoom-out;">
+  <img id="lightbox-img" src="" style="max-width:100%;max-height:100%;object-fit:contain;display:block;box-shadow:0 0 80px rgba(0,0,0,0.8);">
+</div>
+
 <!-- MODAL -->
 <div class="modal" id="modal">
   <div class="modal-inner">
@@ -891,8 +896,8 @@
 
       <div style="background:var(--bg2); border-bottom:1px solid rgba(200,255,0,0.35);">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px;">
-          <img src="img/2 de agosto de 2025.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/2 de agosto de 2025_2.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/2 de agosto de 2025.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/2 de agosto de 2025_2.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">2 agosto 2025 — Brooklyn, NY</div>
@@ -903,9 +908,9 @@
 
       <div style="background:var(--bg2); border-bottom:1px solid rgba(200,255,0,0.35);">
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px;">
-          <img src="img/22 de agosto de 2025.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/22 de agosto de 2025_1.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/22 de agosto de 2025_2.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/22 de agosto de 2025.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/22 de agosto de 2025_1.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/22 de agosto de 2025_2.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">22 agosto 2025 — Bangalore</div>
@@ -916,9 +921,9 @@
 
       <div style="background:var(--bg2); border-bottom:1px solid rgba(200,255,0,0.35);">
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px;">
-          <img src="img/7 de septiembre de 2025.jpg" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/7 de septiembre de 2025_1.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/7 de septiembre de 2025_2.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/7 de septiembre de 2025.jpg" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/7 de septiembre de 2025_1.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/7 de septiembre de 2025_2.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">7 septiembre 2025 — Lisboa</div>
@@ -929,9 +934,9 @@
 
       <div style="background:var(--bg2); border-bottom:1px solid rgba(200,255,0,0.35);">
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px;">
-          <img src="img/14 y 15 de noviembre de 2025.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/14 y 15 de noviembre de 2025_1.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/14 y 15 de noviembre de 2025_2.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/14 y 15 de noviembre de 2025.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/14 y 15 de noviembre de 2025_1.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/14 y 15 de noviembre de 2025_2.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">14–15 noviembre 2025 — Viena</div>
@@ -942,9 +947,9 @@
 
       <div style="background:var(--bg2); border-bottom:1px solid rgba(200,255,0,0.35);">
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px;">
-          <img src="img/18 de diciembre de 2025.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/18 de diciembre de 2025_1.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/18 de diciembre de 2025_2.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/18 de diciembre de 2025.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/18 de diciembre de 2025_1.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/18 de diciembre de 2025_2.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">18 diciembre 2025 — Brooklyn, NY</div>
@@ -955,8 +960,8 @@
 
       <div style="background:var(--bg2); border-bottom:1px solid rgba(200,255,0,0.35);">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px;">
-          <img src="img/22 de enero de 2026.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/22 de enero de 2026_1.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/22 de enero de 2026.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/22 de enero de 2026_1.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">22 enero 2026 — Washington DC</div>
@@ -967,8 +972,8 @@
 
       <div style="background:var(--bg2); border-bottom:1px solid rgba(200,255,0,0.35);">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px;">
-          <img src="img/28 de marzo de 2026.png" style="width:100%;height:320px;object-fit:cover;display:block;">
-          <img src="img/28 de marzo de 2026_1.jpg" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/28 de marzo de 2026.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
+          <img src="img/28 de marzo de 2026_1.jpg" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">28 marzo 2026 — Londres</div>
@@ -979,7 +984,7 @@
 
       <div style="background:var(--bg2);">
         <div style="display:grid; grid-template-columns:1fr; gap:2px;">
-          <img src="img/29 de marzo de 2026.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <img src="img/29 de marzo de 2026.png" style="width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1" onclick="openLightbox(this.src)">
         </div>
         <div style="padding:20px 24px;">
           <div style="font-size:9px;letter-spacing:0.3em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">29 marzo 2026 — Osaka</div>
@@ -999,6 +1004,21 @@
 </footer>
 
 <script>
+  function openLightbox(src) {
+    var lb = document.getElementById('img-lightbox');
+    document.getElementById('lightbox-img').src = src;
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('img-lightbox').style.display = 'none';
+    document.getElementById('lightbox-img').src = '';
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { closeLightbox(); closeModal(); }
+  });
+
   function toggleGaleria(e) {
     var g = document.getElementById('galeria-internacional');
     var arrow = document.getElementById('galeria-arrow');
@@ -1049,7 +1069,6 @@
   });
 
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeModal();
   });
 </script>
 </body>
